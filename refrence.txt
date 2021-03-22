@@ -1,0 +1,136 @@
+# lastnode 
+p=self.start
+while p.link is not None:
+    p=p.link
+
+# second last node
+p=self.start
+while p.link.link is not None:
+    p=p.link
+
+# to node with particular info 
+p=self.start
+while p is not none:
+    if p.info==x:
+        break
+    p=p.link
+
+# to predecessor of node 
+p=self.start
+whlie p.link is not None:
+    if p.link.info==x:
+        break
+    p=p.link
+
+#to a node at particular position 
+p-self.start
+i=1
+while i<k and p is not None:
+    p=p.link
+    i+=1
+
+
+def insert_in_beginning(self,data):
+    temp=Node(data)
+    temp.link=self.start
+    self.start=temp
+
+def insert_at_end(self,data):
+    temp=Node(data)
+    if self.start is None:
+        self.start=temp
+        return
+
+    p=self.start
+    while p.link is not None:
+        p=p.link
+    p.link=temp
+
+
+def create_list(self):
+    n=int(input("enter no. of nodes:"))
+    if n==0:
+        return
+    for i in range(n):
+        data=int(input("enter elements to be inserted:"))
+        self.insert_at_end(data)
+
+def insert_after(self,data,x):
+    p=self.start
+    if p is None:
+        print(x,"not present in list ")
+    whlie p is not none:
+    p=p.link
+    if p.info==x:
+        break
+    temp=node(data)
+    temp.link=p.link
+    p.link=temp
+
+
+def insert_before(self,data,x):
+    #if list is empty
+    if self.start is None:
+        print(" list is empty")
+        return
+    # x is first node,new node to be inserted before first node 
+    if x==self.start.info :
+        temp=Node(data)
+        temp.link=self.start
+        self.start=temp
+        return
+
+    #find refrence to predeccesor of node containing x
+    p=self.start
+    while p.link is not None:
+        if p.link.info==x:
+            break
+        p=p.link
+
+        if p.link is None:
+            print(x,"not present in list")
+        else:
+            temp=Npde(data)
+            temp.link=p.link
+            p.link=temp
+
+def insert_at_position(self,data,x):
+    if k==1:
+        temp=Node(data)
+        temp.link==self.start
+        self.start=temp
+        return
+
+    p=self.start
+    i=1
+
+    while i<k-1 and p is not None:
+        #find a refrence to k-1 node
+        p=p.link
+        i+=1
+
+        
+    if p is None:
+        print("you can insert only upto position",i)
+    else:
+        temp=None
+        temp.link=p.link
+        p.link=temp
+
+
+
+
+# Reversing singly linked list
+def reverse_list(self):
+    prev=None
+    p=self.start
+    while p is not None:
+        next=p.link
+        p.link=prev
+        prev=p
+        p=next
+    self.start=prev
+
+
+    
+
