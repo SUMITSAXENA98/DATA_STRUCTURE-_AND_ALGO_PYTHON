@@ -23,7 +23,7 @@ whlie p.link is not None:
     p=p.link
 
 #to a node at particular position 
-p-self.start
+p=self.start
 i=1
 while i<k and p is not None:
     p=p.link

@@ -1,5 +1,0 @@
-p=self.start
-while p is not None:
-    print(p.info,"",end='')
-    p=p.link
-
